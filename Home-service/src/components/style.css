@@ -1,65 +1,76 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    background-color: #fff;
-    box-shadow:  0px 0px 1px #888;
-}
-
-ul li{
-    display: inline;
-    margin: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.log{
-    margin-left: 20px;
-}
-
-.sign{
-    margin-right: 150px;
-    border-color: #e87a2c;
-    background-color: white;
-    padding : 20px 50px;
-    border-radius: 30px;
-}
-
-.sign:hover{
-    background-color:#e87a2c;
-    cursor: pointer;
-    transition: background-color 1s;
-}
-
-.searchbar{
-    border-radius: 12px;
-    padding : 10px 50px;
-}
-
 .home {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-  }
-  
-  .home-box1, .home-box2 {
-    flex: 1;
-    padding: 100px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-  }
-  
-  .home-box1 {
-    text-align: center;
-  }
-  
-  .home-box2 {
-    text-align: center;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 5px; /* Reduced gap */
+}
+
+.home-box1, .home-box2 {
+  position: relative;
+  width: 45%; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  overflow: hidden; /* Hide overflow to ensure the image doesn't spill out */
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the box, cropping if necessary */
+  transition: opacity 1s ease-in-out; /* Optional: for fade-in effect */
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  transform: translateY(100%); /* Hide description by default */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.home-box1:hover .description, .home-box2:hover .description {
+  transform: translateY(0); /* Show description on hover */
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px; /* Reduced padding for smaller arrows */
+  cursor: pointer;
+  font-size: 18px; /* Reduced font size for smaller arrows */
+  z-index: 1;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.home-box1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the box, cropping if necessary */
+}
+
+.home-box2 {
+  text-align: center;
+}
+
   .cards{
      width: 5px;
   }

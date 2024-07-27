@@ -1,0 +1,79 @@
+.sign {
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 10px; 
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+
+
+.SignUp{
+  align-items: middle;
+  border: 1px solid black;
+  width: 30%;
+  margin: auto;
+  margin-top: 0%;
+  border-radius: 2%;
+  text-align: center;
+  box-shadow: black;
+  border-top-left-radius: 0%;
+  background: linear-gradient(lavender, transparent);
+  /* padding: 25px; */
+  /* align-items: center; */
+  
+}
+
+
+#SignUpHeader{
+  text-align: center;
+}
+.textComponent{
+  align-items: center;
+  justify-content: center;
+  margin: 7px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  height: 30px;
+  width: 300px;
+  padding-left: 20px;
+  
+  /* text-align: center; */
+}
+
+.SignUpSubmit{
+  background-color: black;
+  color: white;
+  margin: 9px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.SignUpRadio{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  margin: 2px;
+  text-size-adjust: auto;
+  padding-left: 45px;
+}
+
+.ToogleDiv{
+  width: 30%;
+  margin: auto;
+  margin-top: 2%;
+  text-align: left;
+}
+
+.Toogle{
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-bottom-color: white;
+  height: 28px;
+  width: auto;
+  padding-inline: 20px;
+}
+
+.Toogle:hover{
+  background-color: lavender;
+}
